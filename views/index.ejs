@@ -1,14 +1,32 @@
-<!--
-including header content which is common for all pages
--->
-<%- include layouts/header.ejs %>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>SVG Chart Test</title>
+        <style>
+        .svgContainer {
+            display: inline;
+        }
+        #sc1,
+        #sc2,
+        #sc3 {
+          width: 400px;
+          height: 400px;
+          background-color: #a0a0a0;
+        }
+    </style>
+    </head>
+    <body>
+      top<br>
 
-<!-- <%- include layouts/header2.ejs %>
-<%- include layouts/nav.ejs %>
-<%- include layouts/main.ejs %> -->
+<div class="svgContainer" id="sc1"></div>
+<div class="svgContainer" id="sc2"></div>
 
 
-<!--
-including footer content which is common for all pages
--->
-<%- include layouts/footer.ejs %>
+<br>
+bot
+<script type="text/javascript" src='svj.js'>
+
+</script>
+    </body>
+</html>
